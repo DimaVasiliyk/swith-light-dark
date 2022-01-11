@@ -1,36 +1,38 @@
-:root[data-theme="theme-light"] {
-    --primary-color: #0072a3;
-    --text-color: #333333;
-    --bg-color: #fafafa;
-    --component-bg-color: #ffffff;
+@mixin themable ($theme-name, $body-bg, $h1-bg,){
+    .#{$theme-name}{
+        body{
+        background: rgb(29, 29, 29);
+        transition: 1s;
+        
+        }
+        h1{
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        button{
+            padding: 8px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            width: 50px;
+            margin-top: 1%;
+            outline: none;
+        }
+        button:hover{
+            background-color: blanchedalmond;
+        }
+    }
 }
 
-:root[data-theme="theme-dark"] {
-    --primary-color: #49afd9;
-    --text-color: #e3f5fc;
-    --bg-color: #1b2a32;
-    --component-bg-color: #22343c;
-}
-
-
-body {
-  background-color: var(--bg-color)
-}
-.component {
-  background-color: var(--component-bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--primary-color);
-}
-
-h2 {
-  color: var(--primary-color);
-}
-
-
-body > div {
-  width: 300px;
-  height: 300px;
-  margin: 50px;
-  padding: 20px;
-}
-
+@include themable(theme-1, #000000, #ffffff, );
+@include themable(theme-2, #ffffff, #000000, );

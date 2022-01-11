@@ -1,36 +1,61 @@
-:root[data-theme=theme-light] {
-  --primary-color: #0072a3;
-  --text-color: #333333;
-  --bg-color: #fafafa;
-  --component-bg-color: #ffffff;
+.theme-1 body {
+  background: #1d1d1d;
+  transition: 1s;
+}
+.theme-1 h1 {
+  color: white;
+  text-align: center;
+}
+.theme-1 .wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.theme-1 button {
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 1%;
+  outline: none;
+}
+.theme-1 button:hover {
+  background-color: blanchedalmond;
 }
 
-:root[data-theme=theme-dark] {
-  --primary-color: #49afd9;
-  --text-color: #e3f5fc;
-  --bg-color: #1b2a32;
-  --component-bg-color: #22343c;
+.theme-2 body {
+  background: #1d1d1d;
+  transition: 1s;
 }
-
-body {
-  background-color: var(--bg-color);
+.theme-2 h1 {
+  color: white;
+  text-align: center;
 }
-
-.component {
-  background-color: var(--component-bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--primary-color);
+.theme-2 .wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-h2 {
-  color: var(--primary-color);
+.theme-2 button {
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 1%;
+  outline: none;
 }
-
-body > div {
-  width: 300px;
-  height: 300px;
-  margin: 50px;
-  padding: 20px;
+.theme-2 button:hover {
+  background-color: blanchedalmond;
 }
 
 /*# sourceMappingURL=index.css.map */
