@@ -1,0 +1,30 @@
+body{
+    
+transition: 1s;
+
+}
+h1{
+    text-align: center;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+    margin-top: 1%;
+    outline: none;
+}
+button:hover{
+    background-color: blanchedalmond;
+}
