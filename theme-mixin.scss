@@ -1,7 +1,7 @@
-@mixin themable ($theme-name, $body-bg, $h1-bg,){
+@mixin themable ($theme-name, $body-bg, $h1-bg){
     .#{$theme-name}{
         body{
-        background: rgb(29, 29, 29);
+        background:  $body-bg;
         transition: 1s;
         
         }
@@ -20,7 +20,7 @@
         
         button{
             padding: 8px;
-            background-color: rgb(255, 255, 255);
+            background-color: $h1-bg;
             color: rgb(0, 0, 0);
             border: none;
             border-radius: 5px;
@@ -36,3 +36,37 @@
 
 @include themable(theme-1, #000000, #ffffff, );
 @include themable(theme-2, #ffffff, #000000, );
+
+
+
+body{
+  background:  $body-bg;
+  transition: 1s;
+  
+  }
+  h1{
+      color: rgb(255, 255, 255);
+      text-align: center;
+  }
+  .wrapper{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  button{
+      padding: 8px;
+      background-color: $h1-bg;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      width: 50px;
+      margin-top: 1%;
+      outline: none;
+  }
+  button:hover{
+      background-color: blanchedalmond;
+  }

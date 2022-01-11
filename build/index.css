@@ -1,5 +1,5 @@
 .theme-1 body {
-  background: #1d1d1d;
+  background: #000000;
   transition: 1s;
 }
 .theme-1 h1 {
@@ -16,7 +16,7 @@
 }
 .theme-1 button {
   padding: 8px;
-  background-color: white;
+  background-color: #ffffff;
   color: black;
   border: none;
   border-radius: 5px;
@@ -29,7 +29,7 @@
 }
 
 .theme-2 body {
-  background: #1d1d1d;
+  background: #ffffff;
   transition: 1s;
 }
 .theme-2 h1 {
@@ -46,7 +46,7 @@
 }
 .theme-2 button {
   padding: 8px;
-  background-color: white;
+  background-color: #000000;
   color: black;
   border: none;
   border-radius: 5px;
