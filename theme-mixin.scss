@@ -1,15 +1,17 @@
 @mixin themable ($theme-name, $body-bg, $h1-bg){
     .#{$theme-name}{
         body{
-        background:  $body-bg;
         transition: 1s;
-        
         }
         h1{
-            color: rgb(255, 255, 255);
+            color: $h1-bg;
             text-align: center;
         }
         .wrapper{
+           padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: $body-bg;
             height: 100vh;
             width: 100%;
             display: flex;
@@ -20,8 +22,7 @@
         
         button{
             padding: 8px;
-            background-color: $h1-bg;
-            color: rgb(0, 0, 0);
+            color: rgb(133, 92, 92);
             border: none;
             border-radius: 5px;
             width: 50px;
@@ -31,42 +32,8 @@
         button:hover{
             background-color: blanchedalmond;
         }
-    }
+  }
 }
 
-@include themable(theme-1, #000000, #ffffff, );
-@include themable(theme-2, #ffffff, #000000, );
-
-
-
-body{
-  background:  $body-bg;
-  transition: 1s;
-  
-  }
-  h1{
-      color: rgb(255, 255, 255);
-      text-align: center;
-  }
-  .wrapper{
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  button{
-      padding: 8px;
-      background-color: $h1-bg;
-      color: rgb(0, 0, 0);
-      border: none;
-      border-radius: 5px;
-      width: 50px;
-      margin-top: 1%;
-      outline: none;
-  }
-  button:hover{
-      background-color: blanchedalmond;
-  }
+@include themable(dark-theme, #ffffff, #000000, );
+@include themable(light-theme, #000000, #ffffff, );

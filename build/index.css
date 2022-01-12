@@ -1,12 +1,15 @@
-.theme-1 body {
-  background: #000000;
+.dark-theme body {
   transition: 1s;
 }
-.theme-1 h1 {
-  color: white;
+.dark-theme h1 {
+  color: #000000;
   text-align: center;
 }
-.theme-1 .wrapper {
+.dark-theme .wrapper {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -14,29 +17,31 @@
   justify-content: center;
   align-items: center;
 }
-.theme-1 button {
+.dark-theme button {
   padding: 8px;
-  background-color: #ffffff;
-  color: black;
+  color: #855c5c;
   border: none;
   border-radius: 5px;
   width: 50px;
   margin-top: 1%;
   outline: none;
 }
-.theme-1 button:hover {
+.dark-theme button:hover {
   background-color: blanchedalmond;
 }
 
-.theme-2 body {
-  background: #ffffff;
+.light-theme body {
   transition: 1s;
 }
-.theme-2 h1 {
-  color: white;
+.light-theme h1 {
+  color: #ffffff;
   text-align: center;
 }
-.theme-2 .wrapper {
+.light-theme .wrapper {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000000;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -44,17 +49,16 @@
   justify-content: center;
   align-items: center;
 }
-.theme-2 button {
+.light-theme button {
   padding: 8px;
-  background-color: #000000;
-  color: black;
+  color: #855c5c;
   border: none;
   border-radius: 5px;
   width: 50px;
   margin-top: 1%;
   outline: none;
 }
-.theme-2 button:hover {
+.light-theme button:hover {
   background-color: blanchedalmond;
 }
 
